@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create User Table
+      author: gunay
+      changes:
+        - createTable:
+            tableName: user_table
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: user_name
+                  type: varchar(255)
+              - column:
+                  name: password
+                  type: varchar(255)
+              - column:
+                  name: email
+                  type: varchar(255)
+              - column:
+                  name: updated_at
+                  type: timestamp
+              - column:
+                  name: created_at
+                  type: timestamp

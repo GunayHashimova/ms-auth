@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create User Sequence
+      author: gunay
+      changes:
+        - createSequence:
+            incrementBy: 50
+            sequenceName: user_sequence
